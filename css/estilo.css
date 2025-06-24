@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #ddd;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.menu-lateral {
+    background-color: #111;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.menu-lateral img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d4af37;
+}
+
+.menu-lateral a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menu-lateral a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #add8e6;
+    background-color: transparent;
+}
+
+.conteudo-principal {
+    flex-grow: 1;
+    padding: 30px;
+    max-width: 900px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-principal header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-grande {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #d4af37;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ddd;
+    text-align: center;
+}
+
+.conteudo-principal section h2 {
+    font-size: 2em;
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #ddd;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.conteudo-principal section p em {
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+    margin-top: 50px;
+}

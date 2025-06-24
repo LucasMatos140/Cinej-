@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #d4af37;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu-lateral {
+    background-color: #111;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.menu-lateral img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #d4af37;
+}
+
+.menu-lateral a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    display: block;
+}
+
+.menu-lateral a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #add8e6;
+    background-color: transparent;
+}
+
+.conteudo-principal {
+    flex-grow: 1;
+    padding-left: 20px;
+    max-width: calc(100% - 240px);
+}
+
+.categorias {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.categorias a {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.categorias a:hover {
+    border-bottom: 2px solid #d4af37;
+}
+
+.grid-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.grid-filmes a {
+    color: #d4af37;
+    text-decoration: none;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-filmes a img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.grid-filmes a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #add8e6;
+}
+
+.grid-filmes a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px #add8e6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #d4af37;
+    font-size: 0.9em;
+}
